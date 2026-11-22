@@ -20,7 +20,7 @@ In last-mile food delivery, high delay rates directly erode customer retention a
 
 ```mermaid
 flowchart LR
-    A["1. Data Ingestion<br/>Raw Order & Delivery Logs"] --> B["2. Feature Engineering<br/>Delays, Efficiency & Flags"]
-    B --> C["3. Data Modeling<br/>Linked Pivot Tables & KPIs"]
-    C --> D["4. Dashboard Architecture<br/>Charts, Timeline & Slicers"]
-    D --> E["5. Decision Support<br/>Benchmarks & Strategy"]
+    A[1. Data Ingestion] --> B[2. Feature Engineering]
+    B --> C[3. Pivot Modeling]
+    C --> D[4. Interactive Dashboard]
+    D --> E[5. Strategic Insights]
