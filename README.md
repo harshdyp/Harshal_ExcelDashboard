@@ -1,46 +1,18 @@
-# Pizza Delivery Performance Analysis
+# Pizza Delivery Performance & Operational Analytics
 
-![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Data Analytics](https://img.shields.io/badge/Data_Analytics-0A66C2?style=for-the-badge&logo=googlesheets&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-2EA44F?style=for-the-badge)
-
-An end-to-end operational analytics project built in Microsoft Excel to evaluate pizza delivery efficiency, delay rates, restaurant turnaround times, seasonal trends, and customer payment behavior across 2024–2026.
+An end-to-end operational analytics project built in **Microsoft Excel** to evaluate pizza delivery efficiency, SLA compliance, restaurant turnaround times, seasonal bottlenecks, and customer payment behavior across major U.S. markets (2024–2026).
 
 ---
 
-## Table of Contents
+## Business Problem & Objective
 
-- [Executive Summary](#executive-summary)
-- [Dashboard Preview](#dashboard-preview)
-- [Analytical Workflow](#analytical-workflow)
-- [Key Findings](#key-findings)
-- [Dataset & Feature Engineering](#dataset--feature-engineering)
-- [Business Recommendations](#business-recommendations)
-- [Repository Structure](#repository-structure)
-- [How to Use](#how-to-use)
+In last-mile food delivery, high delay rates directly erode customer retention and increase refund costs. Raw order logs alone make it difficult for operations teams to pinpoint whether delays are driven by specific restaurant chains, seasonal demand spikes, or order complexity.
 
----
-
-## Executive Summary
-
-Delivery speed and on-time reliability directly drive customer retention in food delivery. This dashboard consolidates order-level delivery records across major U.S. cities into an interactive single-page view, enabling stakeholders to isolate bottlenecks by **Order Time (2024–2026)** and **Pizza Size (Small, Medium, Large, XL)**.
-
-### Performance Snapshot *(Filter: Medium Pizza | All Periods)*
-
-| Metric | Value | Operational Context |
-| :--- | :---: | :--- |
-| **Total Orders** | `429` | Total order volume under active filter |
-| **Delayed Orders** | `210` | **49.0%** of deliveries exceeded expected time |
-| **Average Delivery Time** | `28 min` | Mean end-to-end fulfillment duration |
-| **Average Distance** | `4 km` | Mean distance from restaurant to customer |
-
----
-
-## Dashboard Preview
-
-<p align="center">
-  <img src="assets/dashboard_preview.png" alt="Pizza Delivery Performance Dashboard" width="100%">
-</p>
+**Objective:** Transform granular order-level delivery records into an interactive, single-page executive dashboard that enables stakeholders to:
+* Monitor core SLA and fulfillment KPIs in real time.
+* Benchmark delivery speed across competing restaurant chains.
+* Identify seasonal congestion windows and payment channel trends.
+* Dynamically slice performance by **Order Time (2024–2026)** and **Pizza Size (Small, Medium, Large, XL)**.
 
 ---
 
@@ -48,7 +20,7 @@ Delivery speed and on-time reliability directly drive customer retention in food
 
 ```mermaid
 flowchart LR
-    A["1. Data Ingestion<br/>Raw Order & Delivery Logs"] --> B["2. Data Preparation<br/>Cleaning & Feature Engineering"]
-    B --> C["3. Aggregation<br/>Pivot Tables & KPI Measures"]
-    C --> D["4. Dashboard Design<br/>PivotCharts, Timeline & Slicers"]
-    D --> E["5. Decision Support<br/>Insights & Recommendations"]
+    A["1. Data Ingestion<br/>Raw Order & Delivery Logs"] --> B["2. Feature Engineering<br/>Delays, Efficiency & Flags"]
+    B --> C["3. Data Modeling<br/>Linked Pivot Tables & KPIs"]
+    C --> D["4. Dashboard Architecture<br/>Charts, Timeline & Slicers"]
+    D --> E["5. Decision Support<br/>Benchmarks & Strategy"]
